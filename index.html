@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mukthi Ayurveda Clinic | Kollegal & Yelandur</title>
+  <meta name="description" content="Visit Mukthi Ayurveda Clinic for authentic Ayurvedic treatments by Dr. Muhammed Fahique. Specialized care in Kollegal and Yelandur. Book your appointment today!">
+  <style>
+    :root {
+      --primary: #2E7D32;
+      --secondary: #4CAF50;
+      --accent: #81C784;
+      --light-bg: #f8faf8;
+      --text: #333;
+      --white: #ffffff;
+    }
+
+    body { font-family: 'Segoe UI', Roboto, Arial, sans-serif; margin: 0; padding: 0; background: var(--light-bg); color: var(--text); line-height: 1.6; }
+
+    header { background: var(--white); color: var(--primary); padding: 20px; text-align: center; border-bottom: 3px solid var(--primary); }
+    .logo-img { max-width: 250px; height: auto; margin-bottom: 10px; }
+
+    nav { background: var(--secondary); padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    h2 { color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 30px; }
+
+    .doctor-box { background: white; padding: 30px; border-radius: 12px; border-left: 8px solid var(--primary); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+
+    .grid-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+    .card { background: var(--white); padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+    .treatments ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; padding: 0; list-style: none; }
+    .treatments li { background: #e8f5e9; padding: 15px; border-radius: 5px; font-weight: 500; text-align: center; }
+
+    .booking-form { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    .booking-form input, .booking-form select, .booking-form textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; }
+    .booking-form button { background: var(--primary); color: white; border: none; padding: 15px; border-radius: 6px; cursor: pointer; width: 100%; font-weight: bold; font-size: 1.1rem; }
+    
+    .whatsapp-btn {
+      position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 1000; font-size: 30px;
+    }
+
+    footer { background: #333; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+    @media (max-width: 600px) { nav a { display: block; margin: 10px 0; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpeg" alt="Mukthi Ayurveda Logo" class="logo-img">
+  <p>Authentic Healing & Wellness Center</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#doctor">The Doctor</a>
+  <a href="#treatments">Treatments</a>
+  <a href="#booking">Book Appointment</a>
+  <a href="#contact">Locations</a>
+</nav>
+
+<section id="about">
+  <h2>Our Mission</h2>
+  <p>Mukthi Ayurveda Clinic, founded by <strong>Dr. Muhammed Fahique</strong>, is dedicated to the ancient wisdom of holistic healing. With branches in Kollegal and Yelandur, we focus on restoring natural balance through personalized Ayurvedic therapies and lifestyle guidance.</p>
+</section>
+
+<section id="doctor">
+  <div class="doctor-box">
+    <h2>Dr. Muhammed Fahique</h2>
+    <p><strong>Founder & Chief Physician</strong></p>
+    <p>Dr. Fahique is an expert in classical Ayurveda, known for his expertise in Panchakarma and chronic lifestyle disorders. Under his leadership, Mukthi Ayurveda has become a beacon of health and wellness in Karnataka.</p>
+  </div>
+</section>
+
+<section id="treatments" class="treatments">
+  <h2>Treatments Offered</h2>
+  <ul>
+    <li>Panchakarma Detox</li>
+    <li>Joint & Back Pain</li>
+    <li>Stress Management</li>
+    <li>Skin & Hair Care</li>
+    <li>Lifestyle Consultation</li>
+    <li>Immunity Boosting</li>
+  </ul>
+</section>
+
+<section id="booking">
+  <div class="booking-form">
+    <h2 style="text-align:center; width: 100%;">Book an Appointment</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="8192aded-b482-4343-99f4-6089467e71ba">
+      
+      <input type="text" name="name" placeholder="Patient Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <select name="location" required>
+        <option value="" disabled selected>Select Clinic Branch</option>
+        <option value="Kollegal">Kollegal Branch</option>
+        <option value="Yelandur">Yelandur Branch</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Briefly describe your concern"></textarea>
+      
+      <input type="hidden" name="redirect" value="https://mukthi-ayurveda-clinics.github.io/mukthi-ayurveda/thankyou.html">
+      
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Our Locations</h2>
+  <div class="grid-row">
+    <div class="card">
+      <h3>Kollegal Branch</h3>
+      <p>5435+M49, SCKM Road<br>(Near Bank of India building)<br>Southern Extension, Kollegala<br>Karnataka 571440</p>
+      <p><strong>Call:</strong> <a href="tel:8921340275" style="color:var(--primary); text-decoration:none;">8921340275</a></p>
+    </div>
+    <div class="card">
+      <h3>Yelandur Branch</h3>
+      <p>Sri Biligiri Complex<br>Near Canara Bank, Yelandur<br>Karnataka 571441</p>
+      <p><strong>Call:</strong> <a href="tel:8921340275" style="color:var(--primary); text-decoration:none;">8921340275</a></p>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/918921340275?text=Hello%20Dr.%20Fahique,%20I%20would%20like%20to%20book%20a%20consultation." class="whatsapp-btn" target="_blank">
+  <span title="Chat on WhatsApp">💬</span>
+</a>
+
+<footer>
+  <p>&copy; 2026 Mukthi Ayurveda Clinic | Dr. Muhammed Fahique</p>
+  <p>mukthiayurvedaclinics@gmail.com</p>
+</footer>
+
+</body>
+</html>
